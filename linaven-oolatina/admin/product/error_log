@@ -1,0 +1,5 @@
+[29-May-2014 09:57:40 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/linavenf/public_html/dev/ecommerce/admin/product/index.php on line 135
+[29-May-2014 05:58:01 America/New_York] PHP Warning:  mysql_query(): Access denied for user 'linavenf'@'localhost' (using password: NO) in /home/linavenf/public_html/dev/ecommerce/admin/product/index.php on line 132
+[29-May-2014 05:58:01 America/New_York] PHP Warning:  mysql_query(): A link to the server could not be established in /home/linavenf/public_html/dev/ecommerce/admin/product/index.php on line 132
+[29-May-2014 05:58:01 America/New_York] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/linavenf/public_html/dev/ecommerce/admin/product/index.php on line 133
+[29-May-2014 05:59:20 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, object given in /home/linavenf/public_html/dev/ecommerce/admin/product/index.php on line 133

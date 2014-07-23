@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^index-([a-z]+).html/?$ index.php?hide=$1 [L]
+RewriteRule ^radio-([^/]+).html/?$ index.php?radio=$1 [L]
+RewriteRule ^albums-([^/]+)-([a-z]+).html/?$ showalbum.php?slug=$1&hide=$2 [L]
+RewriteRule ^artist-([^/]+)-([a-z]+).html/?$ artist.php?slug=$1&hide=$2 [L]
+RewriteRule ^videos-([^/]+)-([a-z]+).html/?$ showvideo.php?slug=$1&hide=$2 [L]
+RewriteRule ^event-([^/]+)-([a-z]+).html/?$ showagenda.php?slug=$1&hide=$2 [L]
+RewriteRule agenda-([a-z]+).html/?$ agenda.php?hide=$1 [L]
+RewriteRule photos-([a-z]+).html/?$ photo.php?hide=$1 [L]
+RewriteRule audio-([a-z]+)-([a-z-]+).html/?$ audio.php?hide=$1&category=$2 [L]
+RewriteRule video-([a-z]+)-([a-z-]+).html/?$ video.php?hide=$1&category=$2 [L]
+RewriteRule search-([a-z]+)-([a-z-]+).html/?$ search.php?hide=$1&search=$2 [L]
